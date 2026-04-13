@@ -1,43 +1,29 @@
-# Customer-Support-System
 # 📌 Customer Support System in C
 
-## 📖 Project Description
-This project is a simple **Customer Support System** implemented in the C programming language.  
-It allows users to create, manage, and track customer support tickets using a menu-driven interface.
+## 👥 Team Members
+- K.Venkata Nishanth Reddy
+- Ravipatri Rajesh
 
 ---
 
-## 🎯 Objectives
-- Understand **structures in C**
-- Practice **arrays and functions**
-- Build a **real-world mini project**
-- Implement a **menu-driven program**
+## 🎯 Problem Statement
+In many organizations, managing customer complaints manually is inefficient and time-consuming.  
+This project aims to develop a **Customer Support System** using C that allows users to efficiently manage support tickets with basic CRUD operations.
 
 ---
 
-## ⚙️ Features
-- 🆕 Create a new support ticket  
-- 📋 View all tickets  
-- 🔍 Search ticket by ID  
-- ✏️ Update ticket status (Open / Closed / In Progress)  
-- 🚪 Exit the system  
+## 💡 Project Objective
+- Implement real-world problem solving using **Data Structures in C**
+- Perform **CRUD operations (Create, Read, Update, Delete)**
+- Use **dynamic memory allocation**
+- Develop a **menu-driven application**
 
 ---
 
-## 🧱 Technologies Used
-- **Language:** C  
-- **Concepts Used:**
-  - Structures
-  - Arrays
-  - Functions
-  - Loops
-  - Conditional Statements
+## 🧱 Data Structure Used
+We use a **Linked List** to store customer support tickets dynamically.
 
----
-
-## 📂 Data Structure
-
-Each ticket contains:
+Each node contains:
 - `Ticket ID`
 - `Customer Name`
 - `Issue Description`
@@ -45,9 +31,41 @@ Each ticket contains:
 
 ---
 
-## ▶️ How to Run
+## ⚙️ Features (CRUD Operations)
 
-### 1. Clone the Repository
-```bash
-git clone https://github.com/your-username/customer-support-system.git
-cd customer-support-system
+- ➕ **Create** – Add a new ticket  
+- 📋 **Read** – Display all tickets  
+- ✏️ **Update** – Modify ticket details/status  
+- ❌ **Delete** – Remove a ticket  
+- 🔍 **Search** – Find ticket by ID  
+
+---
+
+## 🧠 Algorithm (Basic Steps)
+
+### 1. Add Ticket
+- Allocate memory using `malloc`
+- Input ticket details
+- Insert node into linked list
+
+### 2. Display Tickets
+- Traverse linked list
+- Print each node’s data
+
+### 3. Search Ticket
+- Traverse list
+- Compare Ticket ID
+
+### 4. Update Ticket
+- Search node by ID
+- Modify details
+
+### 5. Delete Ticket
+- Locate node
+- Adjust pointers
+- Free memory using `free`
+
+---
+
+## 🖥️ Sample Menu
+
