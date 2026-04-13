@@ -1,71 +1,141 @@
-# 📌 Customer Support System in C
+````markdown
+# 📘 Customer Support System using Tree (C Program)
+
+## 🎯 Objective
+The objective of this project is to implement a Customer Support System using the Tree Data Structure in C programming. This system manages customer tickets and demonstrates CRUD operations.
+
+---
 
 ## 👥 Team Members
-- K.Venkata Nishanth Reddy
-- Ravipatri Rajesh
+- K. Nishanth Reddy
+- P. Rajesh
 
 ---
 
-## 🎯 Problem Statement
-In many organizations, managing customer complaints manually is inefficient and time-consuming.  
-This project aims to develop a **Customer Support System** using C that allows users to efficiently manage support tickets with basic CRUD operations.
+## 📌 Project Description
+This project simulates a customer support system where tickets are stored in a hierarchical structure using a Tree (N-ary Tree).
+
+Each node represents a support ticket, and child nodes represent sub-issues or follow-ups.
 
 ---
 
-## 💡 Project Objective
-- Implement real-world problem solving using **Data Structures in C**
-- Perform **CRUD operations (Create, Read, Update, Delete)**
-- Use **dynamic memory allocation**
-- Develop a **menu-driven application**
+## 🌍 Real-world Applications
+- Helpdesk systems
+- Customer support platforms
+- Complaint management systems
+- IT service tracking
 
 ---
 
-## 🧱 Data Structure Used
-We use a **Linked List** to store customer support tickets dynamically.
+## 🧠 Data Structure Used
+Tree (N-ary Tree)
 
-Each node contains:
-- `Ticket ID`
-- `Customer Name`
-- `Issue Description`
-- `Status`
-
----
-
-## ⚙️ Features (CRUD Operations)
-
-- ➕ **Create** – Add a new ticket  
-- 📋 **Read** – Display all tickets  
-- ✏️ **Update** – Modify ticket details/status  
-- ❌ **Delete** – Remove a ticket  
-- 🔍 **Search** – Find ticket by ID  
+### Node contains:
+- Ticket ID
+- Customer Name
+- Issue Description
+- Status (Open / In Progress / Resolved)
+- Pointer to parent
+- List of child nodes
 
 ---
 
-## 🧠 Algorithm (Basic Steps)
+## ⚙️ Features
 
-### 1. Add Ticket
-- Allocate memory using `malloc`
-- Input ticket details
-- Insert node into linked list
+### ➕ Add Ticket
+Adds a new ticket under a parent ticket.
 
-### 2. Display Tickets
-- Traverse linked list
-- Print each node’s data
+### 🔍 Search Ticket
+Searches for a ticket using Ticket ID (DFS traversal).
 
-### 3. Search Ticket
-- Traverse list
-- Compare Ticket ID
+### ✏️ Update Ticket
+Updates ticket details like name, issue, and status.
 
-### 4. Update Ticket
-- Search node by ID
-- Modify details
+### ❌ Delete Ticket
+Deletes a ticket (only if it is a leaf node).
 
-### 5. Delete Ticket
-- Locate node
-- Adjust pointers
-- Free memory using `free`
+### 📄 Display Tickets
+Displays all tickets in hierarchical structure.
 
 ---
 
-## 🖥️ Sample Menu
+## 🏗️ System Design
+- Root node represents the main system
+- Tickets are stored as tree nodes
+- Uses Depth First Search (DFS) for traversal
+
+---
+
+## 💻 Technologies Used
+- C Programming Language
+- Concepts:
+  - Structures
+  - Pointers
+  - Dynamic Memory Allocation
+  - Recursion
+
+---
+
+## ▶️ How to Run
+
+1. Compile the program:
+   ```bash
+   gcc customer_support.c -o support
+````
+
+2. Run the program:
+
+   ```bash
+   ./support
+   ```
+
+---
+
+## 🖥️ Sample Operations
+
+* Add ticket
+* Search ticket
+* Update ticket
+* Delete ticket
+* Display tickets
+
+---
+
+## ✅ Advantages
+
+* Efficient hierarchical management
+* Easy tracking of issues
+* Simple and structured approach
+
+---
+
+## ⚠️ Limitations
+
+* No permanent storage
+* Limited child nodes (if fixed)
+* Only leaf deletion allowed
+
+---
+
+## 🔮 Future Enhancements
+
+* File handling (save/load data)
+* GUI interface
+* Priority-based tickets
+* Multi-user system
+
+---
+
+## 📷 Demo
+
+(Add your screenshots here)
+
+---
+
+## 📚 Conclusion
+
+This project shows how tree data structures can be applied to build a simple and effective customer support system in C.
+
+```
+```
 
