@@ -1,0 +1,107 @@
+----- Customer support system -----
+--- Customer Support System ---
+1. Create Ticket
+2. View Tickets
+3. Search Ticket
+4. Update Status
+5. Exit
+Enter choice: 1
+
+Enter Ticket ID: 101
+Enter Customer Name: Ramesh
+Enter Issue: Login problem
+✅ Ticket Created Successfully!
+
+
+--- Customer Support System ---
+1. Create Ticket
+2. View Tickets
+3. Search Ticket
+4. Update Status
+5. Exit
+Enter choice: 1
+
+Enter Ticket ID: 102
+Enter Customer Name: Suresh
+Enter Issue: Payment failed
+✅ Ticket Created Successfully!
+
+
+--- Customer Support System ---
+1. Create Ticket
+2. View Tickets
+3. Search Ticket
+4. Update Status
+5. Exit
+Enter choice: 2
+
+--- All Tickets ---
+
+ID: 101
+Name: Ramesh
+Issue: Login problem
+Status: Open
+
+ID: 102
+Name: Suresh
+Issue: Payment failed
+Status: Open
+
+
+--- Customer Support System ---
+1. Create Ticket
+2. View Tickets
+3. Search Ticket
+4. Update Status
+5. Exit
+Enter choice: 3
+
+Enter Ticket ID to search: 101
+
+Ticket Found!
+Name: Ramesh
+Issue: Login problem
+Status: Open
+
+
+--- Customer Support System ---
+1. Create Ticket
+2. View Tickets
+3. Search Ticket
+4. Update Status
+5. Exit
+Enter choice: 4
+
+Enter Ticket ID to update: 101
+Enter new status (Open/Closed/In Progress): In Progress
+✅ Status Updated!
+
+
+--- Customer Support System ---
+1. Create Ticket
+2. View Tickets
+3. Search Ticket
+4. Update Status
+5. Exit
+Enter choice: 2
+
+--- All Tickets ---
+
+ID: 101
+Name: Ramesh
+Issue: Login problem
+Status: In Progress
+
+ID: 102
+Name: Suresh
+Issue: Payment failed
+Status: Open
+
+
+--- Customer Support System ---
+1. Create Ticket
+2. View Tickets
+3. Search Ticket
+4. Update Status
+5. Exit
+Enter choice: 5
